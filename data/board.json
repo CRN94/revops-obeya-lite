@@ -1,0 +1,73 @@
+{
+  "columns": [
+    {
+      "id": "backlog",
+      "name": "Backlog",
+      "wipLimit": null
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "wipLimit": 3
+    },
+    {
+      "id": "outbound",
+      "name": "Outbound",
+      "wipLimit": 5
+    },
+    {
+      "id": "interview",
+      "name": "Interview",
+      "wipLimit": 3
+    },
+    {
+      "id": "offer",
+      "name": "Offer",
+      "wipLimit": 2
+    }
+  ],
+  "swimlanes": [
+    {
+      "id": "job",
+      "name": "Job",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "consulting",
+      "name": "Consulting",
+      "color": "#8b5cf6"
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-1",
+      "title": "Crew (withcrew.ai) — RevOps network placement",
+      "column": "outbound",
+      "swimlane": "job",
+      "status": "outbound",
+      "notes": "Applied to network 2026-10-02; multi-thread to partners paused pending portfolio demo.",
+      "daysInStage": 0,
+      "createdDate": "2026-10-02"
+    },
+    {
+      "id": "card-2",
+      "title": "Example card (illustrative)",
+      "column": "backlog",
+      "swimlane": "job",
+      "status": "backlog",
+      "notes": "Placeholder for ICP A RevOps/GTM Eng role",
+      "daysInStage": 0,
+      "createdDate": "2026-10-02"
+    },
+    {
+      "id": "card-3",
+      "title": "RevOps product OS advisory (illustrative)",
+      "column": "research",
+      "swimlane": "consulting",
+      "status": "research",
+      "notes": "Example consulting card to demonstrate swim lanes",
+      "daysInStage": 2,
+      "createdDate": "2026-09-30"
+    }
+  ]
+}

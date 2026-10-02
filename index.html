@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obeya-lite | RevOps Lean WIP Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Obeya-lite</h1>
+            <p class="subtitle">RevOps Lean WIP Board</p>
+        </div>
+        <div class="header-info">
+            <p class="author">Charles Needham | <a href="https://needham.co" target="_blank">needham.co</a></p>
+        </div>
+    </header>
+
+    <div id="andon-banner" class="andon-banner hidden">
+        <span class="andon-icon">⚠️</span>
+        <span id="andon-message">WIP limit exceeded or card blocked</span>
+    </div>
+
+    <main class="board-container">
+        <div class="board-legend">
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #3b82f6;"></span>
+                <span>Job</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #8b5cf6;"></span>
+                <span>Consulting</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color andon-color"></span>
+                <span>Over WIP / Blocked</span>
+            </div>
+        </div>
+
+        <div id="board" class="board">
+            <!-- Columns will be dynamically generated -->
+        </div>
+
+        <div class="pull-principle">
+            <p><strong>Pull principle:</strong> Work moves right only when capacity is available. WIP limits prevent overload and expose bottlenecks.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="scorecard">
+            <p><em>n is small; empty is honest</em> — This board tracks real opportunities, not vanity metrics.</p>
+        </div>
+        <div class="footer-links">
+            <a href="docs/SYSTEM.md">System docs</a> |
+            <a href="docs/DEMO_SCRIPT.md">Demo script</a> |
+            <a href="https://github.com/CRN94/revops-obeya-lite">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
